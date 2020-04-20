@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <style>
+         body  {
+    background: url('/static/yt.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+         }
+      </style>	
+  </head>
+  <body>
+<div class="row">
+<div class="col-sm-1"></div>
+<div class="col-sm-3"> <h1><kbd>YOUR TEAM</kbd></h1></div>
+</div>
+<div class="row">
+<div class="col-sm-1"></div>
+<div class="col-sm-3"><h4><kbd>Your Progress : - </kbd></h4></div>
+<div class="col-sm-4">
+<div class="progress" style="height: 30px;">
+<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 70%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+</div>
+<table class="table table-bordered table-striped table-dark">
+<thead>
+<tr>
+      <th scope="col">Player Name</th>
+      <th scope="col">Cost</th>
+      <th scope="col">Club_Position</th>
+      <th scope="col">Rating</th>
+      <th scope="col">Age</th>
+      <th scope="col">BMI</th>
+      <th scope="col">Skill_moves</th>
+      <th scope="col">Dribbling</th>
+      <th scope="col">Sliding Tackle</th>
+      <th scope="col">Interceptions</th>
+      <th scope="col">Crossing</th>
+      <th scope="col">Long Pass</th>
+      <th scope="col">Stamina</th>	
+      <th scope="col">Finishing</th> 
+      <th scope="col">Gk Reflexes</th>
+	
+</tr>
+</thead>
+<tbody>
+  {% for a in final_team %}
+<tr>
+<td>{{a.playername}}</td>
+<td>{{a.Price}}</td>
+<td>{{a.Club_Position}}</td>
+<td>{{a.Rating}}</td>
+<td>{{a.Age}}</td>
+<td>{{a.BMI}}</td>
+<td>{{a.Skill_Moves}}</td>
+<td>{{a.Dribbling}}</td>
+<td>{{a.Sliding_Tackle}}</td>
+<td>{{a.Interceptions}}</td>
+<td>{{a.Crossing}}</td>
+<td>{{a.Long_Pass}}</td>
+<td>{{a.Stamina}}</td> 
+<td>{{a.Finishing}}</td>
+<td>{{a.GK_Reflexes}}</td>       
+</tr>
+{% endfor %} 
+</tbody>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+</body>
+</html>
+
+
+
+<!--
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+-->

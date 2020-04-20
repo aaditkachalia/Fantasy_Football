@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+{% block body %}
+<h1> Your level is {{level.userid}} </h1>
+<table class="table table-striped">
+	<tr>
+		<th>ID</th>
+		<th>Email</th>
+		<th>Password</th>
+	</tr>
+	{% for detail in details %}
+		<tr>
+			<td>{{detail.userid}}</td>
+			<td>{{detail.email}}</td>
+			<td>{{detail.password}}</td>
+		</tr>
+
+	{% endfor %}
+
+
+
+
+</table>
+{% endblock %}
