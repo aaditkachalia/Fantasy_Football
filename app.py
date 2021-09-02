@@ -9,12 +9,6 @@ import pandas as pd
 app=Flask(__name__)
 
 
-#Config MySQL
-app.config['MYSQL_HOST']='localhost'
-app.config['MYSQL_User']='root'
-app.config['MYSQL_PASSWORD']='icaniwill'
-app.config['MYSQL_DB']='myflaskapp'
-app.config['MYSQL_CURSORCLASS']='DictCursor'
 
 
 #Init mysql
